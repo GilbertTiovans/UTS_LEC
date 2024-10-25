@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Lec_Uts"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".OnBoard1Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +28,10 @@
         <activity android:name=".AddNewExerciseActivity" />
         <activity android:name=".AddExerciseActivity" />
         <activity android:name=".EditExerciseActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".OnBoard2Activity" />
+        <activity android:name=".OnBoard3Activity" />
+        <activity android:name=".CreateOrLoginActivity" />
         <activity
             android:name=".AboutusActivity"
             android:exported="false" />

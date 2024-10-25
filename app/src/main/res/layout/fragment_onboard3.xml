@@ -6,19 +6,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragment.Onboard3Fragment">
-    ]
+
+    <!-- Back Button -->
     <ImageView
         android:id="@+id/onboarding_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/intro3"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!-- Back Button -->
     <ImageView
         android:id="@+id/back_button"
         android:layout_width="48dp"
@@ -84,7 +86,7 @@
 
     <!-- Next Button -->
     <Button
-        android:id="@+id/create_button"
+        android:id="@+id/next_button"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginBottom="50dp"
