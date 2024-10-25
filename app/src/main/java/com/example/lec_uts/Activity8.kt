@@ -18,9 +18,11 @@ class Activity8 : AppCompatActivity() {
     fun goToActivity9(view: View) {
         val intent = Intent(this, Activity9::class.java)
         startActivity(intent)
-        fun goToActivity7(view: View) {
-            val intent = Intent(this, Activity7::class.java)
-            startActivity(intent)
-        }
+
+    }
+
+    fun goToActivity7(view: View) {
+        val intent = Intent(this, Activity7::class.java)
+        startActivity(intent)
     }
 }
