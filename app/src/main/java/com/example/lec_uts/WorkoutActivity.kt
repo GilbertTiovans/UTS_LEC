@@ -2,6 +2,7 @@ package com.example.lec_uts
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 
@@ -17,6 +18,12 @@ class WorkoutActivity : AppCompatActivity() {
             val intent = Intent(this, OtherExerciseActivity::class.java)
             startActivity(intent)
         }
+        val btnBack: ImageView = findViewById(R.id.btn_back)
+        otherExerciseCard.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
 
         // Access another CardView for Cardio and set its click listener
         val cardioCard: CardView = findViewById(R.id.img_cardio)
