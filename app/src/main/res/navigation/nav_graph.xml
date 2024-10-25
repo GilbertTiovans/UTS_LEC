@@ -49,15 +49,7 @@
         android:id="@+id/action_to_login"
         app:destination="@+id/LoginFragment" />
 
-    <fragment
-        android:id="@+id/CreateFragment"
-        android:name="com.example.utslec.fragment.CreateFragment"
-        tools:layout="@layout/fragment_create" />
 
-    <fragment
-        android:id="@+id/LoginFragment"
-        android:name="com.example.utslec.fragment.LoginFragment"
-        tools:layout="@layout/fragment_login" />
 
 
     <fragment
@@ -67,7 +59,7 @@
 
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="com.example.utslec.fragment.CalenderFragment"
+        android:name="com.example.utslec.fragment.CalendarFragment"
         tools:layout="@layout/fragment_calender" />
     <fragment
         android:id="@+id/waterFragment"

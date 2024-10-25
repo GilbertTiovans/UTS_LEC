@@ -26,13 +26,6 @@
         android:gravity="center"
         android:layout_marginBottom="16dp">
 
-        <ImageButton
-            android:id="@+id/btn_previous"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/back2"
-            android:backgroundTint="@color/white"
-            android:contentDescription="Back"/>
 
         <TextView
             android:id="@+id/txt_current_month"
