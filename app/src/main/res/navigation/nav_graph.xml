@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onBoard1Fragment">
+
+    <fragment
+        android:id="@+id/onBoard1Fragment"
+        android:name="com.example.utslec.fragment.Onboard1Fragment"
+        tools:layout="@layout/fragment_onboard1" />
+    <action
+        android:id="@+id/action_next_to_intro2"
+        app:destination="@+id/onBoard2Fragment" />
+
+    <fragment
+        android:id="@+id/onBoard2Fragment"
+        android:name="com.example.utslec.fragment.Onboard2Fragment"
+        tools:layout="@layout/fragment_onboard2" />
+    <action
+        android:id="@+id/action_next_to_intro3"
+        app:destination="@+id/onBoard3Fragment" />
+    <action
+        android:id="@+id/action_back_to_intro1"
+        app:destination="@+id/onBoard1Fragment" />
+
+    <fragment
+        android:id="@+id/onBoard3Fragment"
+        android:name="com.example.utslec.fragment.Onboard3Fragment"
+        tools:layout="@layout/fragment_onboard3" />
+    <action
+        android:id="@+id/action_next_to_CreateOrLoginFragment"
+        app:destination="@+id/CreateOrLoginFragment" />
+    <action
+        android:id="@+id/action_back_to_intro2"
+        app:destination="@+id/onBoard2Fragment" />
+
+    <fragment
+        android:id="@+id/CreateOrLoginFragment"
+        android:name="com.example.utslec.fragment.CreateOrLoginFragment"
+        tools:layout="@layout/fragment_create_or_login" />
+    <action
+        android:id="@+id/action_to_create"
+        app:destination="@+id/CreateFragment" />
+    <action
+        android:id="@+id/action_to_backOnboard3Fragment"
+        app:destination="@+id/onBoard3Fragment" />
+    <action
+        android:id="@+id/action_to_login"
+        app:destination="@+id/LoginFragment" />
+
+    <fragment
+        android:id="@+id/CreateFragment"
+        android:name="com.example.utslec.fragment.CreateFragment"
+        tools:layout="@layout/fragment_create" />
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.utslec.fragment.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.utslec.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.utslec.fragment.CalenderFragment"
+        tools:layout="@layout/fragment_calender" />
+    <fragment
+        android:id="@+id/waterFragment"
+        android:name="com.example.utslec.fragment.WaterFragment"
+        tools:layout="@layout/fragment_water" />
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.utslec.fragment.SettingFragment"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.utslec.fragment.FoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_food"/>
+    <action
+        android:id="@+id/action_foodFragment_to_addFoodFragment"
+        app:destination="@+id/addFoodFragment" />
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.example.utslec.fragment.WorkoutFragment"
+        android:label="Workout"
+        tools:layout="@layout/fragment_workout" />
+    <fragment
+        android:id="@+id/addFoodFragment"
+        android:name="com.example.utslec.fragment.AddFoodFragment"
+        android:label="Add Food"
+        tools:layout="@layout/fragment_add_food" />
+    <action
+        android:id="@+id/action_addFoodFragment_to_addDetailFoodFragment"
+        app:destination="@+id/addDetailFoodFragment" />
+    <action
+        android:id="@+id/action_addFoodFragment_to_createFoodFragment"
+        app:destination="@+id/createFoodFragment" />
+    <action
+        android:id="@+id/action_addFoodFragment_to_FoodFragment"
+        app:destination="@+id/foodFragment" />
+
+    <fragment
+        android:id="@+id/addDetailFoodFragment"
+        android:name="com.example.utslec.fragment.AddDetailFoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_add_detail_food"/>
+    <action
+        android:id="@+id/action_addDetailFoodFragment_to_FoodFragment"
+        app:destination="@id/foodFragment" />
+    <action
+        android:id="@+id/action_addDetailFoodFragment_to_addFoodFragment"
+        app:destination="@id/addFoodFragment" />
+
+    <fragment
+        android:id="@+id/createFoodFragment"
+        android:name="com.example.utslec.fragment.CreateFoodFragment"
+        android:label="Create Food"
+        tools:layout="@layout/fragment_create_food" />
+    <action
+        android:id="@+id/action_createFoodFragment_to_DetailCreateFragment"
+        app:destination="@+id/detailCreateFoodFragment" />
+
+    <fragment
+        android:id="@+id/detailCreateFoodFragment"
+        android:name="com.example.utslec.fragment.DetailCreateFoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_detail_create_food"/>
+    <action
+        android:id="@+id/action_DetailCreateFragment_to_AddFoodFragment"
+        app:destination="@+id/addFoodFragment" />
+
+
+</navigation>

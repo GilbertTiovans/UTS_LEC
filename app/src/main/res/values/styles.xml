@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Input Hint Style -->
+    <style name="TextInputHintAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

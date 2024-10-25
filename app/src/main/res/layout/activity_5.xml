@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="42"
+            android:max="100"
+            android:layout_margin="16dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar"/>
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Only a few more Questions !"
+            android:textColor="@color/black"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="What is your target weight?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="37dp" />
+
+        <EditText
+            android:id="@+id/Umur1Text"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/edittext_border"
+            android:hint="80 KG"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="How long do you want to take to reach your target weight?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="37dp" />
+
+        <EditText
+            android:id="@+id/UmurText"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/edittext_border"
+            android:hint="80 KG"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="That is a 2kg change per month"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@color/green_chris">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:text="We highly recommend aiming to gain or lose only 2-4 kg per month!"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/NextActivity6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:gravity="center_horizontal"
+            android:text="NEXT"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:onClick="goToActivity6" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="20sp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        android:padding="10dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="20sp"
+        android:text="Cardio"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+
+        />
+    <!-- Cardio item Cycling -->
+    <Button
+        android:id="@+id/cyclinger_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Cycling"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/plus"
+        android:drawablePadding="8dp"
+        android:backgroundTint="@color/grey_chris"
+        android:gravity="center_vertical"
+        android:padding="13dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goToActivity13"/>
+
+    <Button
+        android:id="@+id/cycli34ng2_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Walking"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/plus"
+        android:drawablePadding="8dp"
+        android:backgroundTint="@color/grey_chris"
+        android:gravity="center_vertical"
+        android:padding="13dp"
+        android:layout_marginTop="10dp"
+        android:onClick="goToActivity13"/>
+
+    <Button
+        android:id="@+id/cycling231_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  Running"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/plus"
+        android:drawablePadding="8dp"
+        android:backgroundTint="@color/grey_chris"
+        android:gravity="center_vertical"
+        android:padding="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="200dp"
+        android:onClick="goToActivity8"/>
+
+    <Button
+        android:id="@+id/c2ycling_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You still have a Cycling Session going on! \n \npress to go back"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/grey_chris"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:onClick="goToActivity13" />
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="70dp"
+    >
+
+  <ImageButton
+      android:id="@+id/backButton"
+      android:layout_width="60sp"
+      android:layout_marginBottom="20sp"
+      android:layout_height="wrap_content"
+      android:background="@android:color/transparent"
+      android:src="@drawable/back"
+      android:contentDescription="Back"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:padding="10dp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:text="Create your account"
+      android:textColor="@color/black"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Name"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="36dp" />
+
+  <!-- Name Input Field -->
+  <EditText
+      android:id="@+id/editText"
+      android:layout_width="340sp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="36dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="36dp"
+      android:background="@drawable/edittext_border"
+      android:hint="Masukkan nama di sini"
+      android:inputType="text"
+      android:padding="16dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Email"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="36dp" />
+
+  <!-- Name Input Field -->
+  <EditText
+      android:id="@+id/editText"
+      android:layout_width="340sp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="36dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="36dp"
+      android:background="@drawable/edittext_border"
+      android:hint="Masukkan email di sini"
+      android:inputType="text"
+      android:padding="16dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="36dp"
+      android:layout_marginTop="10dp"
+      android:text="Password"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <!-- Name Input Field -->
+  <EditText
+      android:id="@+id/editText"
+      android:layout_width="340sp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="36dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="36dp"
+      android:background="@drawable/edittext_border"
+      android:hint="Masukkan password di sini"
+      android:inputType="textPassword"
+      android:padding="16dp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      />
+
+  <Button
+      android:id="@+id/Next"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="40dp"
+      android:layout_marginEnd="40dp"
+      android:backgroundTint="@android:color/black"
+      android:gravity="center_horizontal"
+      android:text="Next"
+      android:textColor="@color/white"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      android:onClick="goToActivity3"
+      android:layout_marginTop="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="125dp"
+      android:layout_marginTop="10dp"
+      android:text="Forgot Your Password?"
+      android:textColor="@android:color/holo_orange_light"
+      android:textSize="15sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="or"
+      android:textColor="@color/black"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="190dp" />
+
+  <LinearLayout
+      android:id="@+id/googleButton"
+      android:layout_width="330sp"
+      android:layout_marginStart="40dp"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="@drawable/button_border"
+      android:padding="10dp"
+      android:gravity="center">
+
+    <!-- Google logo -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google"
+        android:contentDescription="Google Logo"
+        android:layout_marginEnd="10dp" />
+
+    <!-- Button text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue with Google"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+  </LinearLayout>
+
+
+
+</LinearLayout>

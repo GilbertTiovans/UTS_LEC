@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "777610714309",
+    "project_id": "umnstory-618ed",
+    "storage_bucket": "umnstory-618ed.appspot.com"
+
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777610714309:android:90ab648aaeabde6d2224ac",
+        "android_client_info": {
+          "package_name": "com.example.lec_uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHKAhjOKEriFez-cOndXE5bczYR_XHstw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

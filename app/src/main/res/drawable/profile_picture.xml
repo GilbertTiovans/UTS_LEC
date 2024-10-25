@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/gray"/> <!-- Ganti dengan warna latar belakang yang diinginkan -->
+        </shape>
+    </item>
+    <!-- Image -->
+    <item>
+        <shape android:shape="oval">
+            <size android:width="100dp" android:height="100dp"/> <!-- Sesuaikan ukuran dengan kebutuhan -->
+        </shape>
+    </item>
+</layer-list>

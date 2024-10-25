@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="14"
+            android:max="100"
+            android:layout_margin="16dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar"/>
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Let’s start by defining your goals!"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose the goal you want to achieve!"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp" />
+
+        <Button
+            android:id="@+id/btnLoseWeight"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:text="Lose Weight"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/NextActivity4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:gravity="center_horizontal"
+            android:onClick="goToActivity4"
+            android:text="NEXT"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMaintainWeight"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:text="Maintain Weight"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnGainWeight"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:text="Gain Weight"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnLoseWeightBuildMuscle"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:text="Lose Weight and Build Muscle"
+            android:textColor="@color/text_color_selector"
+            android:backgroundTint="@color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnGainWeightBuildMuscle"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="36dp"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:text="Gain Weight and Build Muscle"
+            android:textColor="@color/text_color_selector"
+            android:backgroundTint="@color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

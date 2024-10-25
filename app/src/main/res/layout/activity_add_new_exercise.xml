@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".AddNewExerciseActivity">
+
+    <!-- Image Background with Title Overlay -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/other" /> <!-- Background Image -->
+
+        <!-- Title Text Overlay -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Exercise"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Form Inputs -->
+    <!-- Name Exercise Input -->
+
+    <!-- Description Exercise Input -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Name Exercise *"
+        app:boxStrokeColor="@android:color/black"
+        app:counterEnabled="true"
+        app:counterMaxLength="60"
+        app:hintTextAppearance="@style/TextInputHintAppearance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_exercise_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:maxLength="60"
+            android:text="Chest Press" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Description Exercise *"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="60"
+        app:layout_constraintTop_toBottomOf="@id/name_input_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:boxStrokeColor="@android:color/black"
+        app:hintTextAppearance="@style/TextInputHintAppearance">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_exercise_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="60"
+            android:text="3 Set, 3 Reps, 20 Kg"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Total Calorie Burn Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/calorie_input_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Total Calorie Burn *"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="60"
+        app:layout_constraintTop_toBottomOf="@id/description_input_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:boxStrokeColor="@android:color/black"
+        app:hintTextAppearance="@style/TextInputHintAppearance">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btn_add_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:text="Add New Exercise"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/calorie_input_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="28"
+            android:max="100"
+            android:layout_margin="16dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_bar"/>
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="220sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Tell us more about you !"
+            android:textColor="@color/black"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="Please choose the gender we will use to calculate your calorie needs:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="35dp"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <!-- Male Option -->
+            <TextView
+                android:id="@+id/male_option"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Male"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#FF8C00"
+                android:background="@drawable/selected_border"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- Female Option -->
+            <TextView
+                android:id="@+id/female_option"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Female"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:background="@drawable/unselected_border"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="How old are you?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="37dp" />
+
+        <EditText
+            android:id="@+id/UmurText"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/edittext_border"
+            android:hint="20"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="How tall are you?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="37dp" />
+
+        <EditText
+            android:id="@+id/UmurText"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/edittext_border"
+            android:hint="171 CM"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="What is your weight?"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="37dp" />
+
+        <EditText
+            android:id="@+id/UmurText"
+            android:layout_width="340sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/edittext_border"
+            android:hint="60 KG"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/NextActivity5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:gravity="center_horizontal"
+            android:text="NEXT"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:onClick="goToActivity5" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
