@@ -15,8 +15,8 @@ class Activity11 : AppCompatActivity() {
         setContentView(R.layout.activity_11)
 
     }
-    fun goToActivity12(view: View) {
-        val intent = Intent(this, Activity12::class.java)
+    fun goToWorkoutActivity(view: View) {
+        val intent = Intent(this, WorkoutActivity::class.java)
         startActivity(intent)
     }
 }

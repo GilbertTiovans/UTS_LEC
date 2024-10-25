@@ -14,8 +14,13 @@ class Activity8 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_8)
     }
+
     fun goToActivity9(view: View) {
         val intent = Intent(this, Activity9::class.java)
         startActivity(intent)
+        fun goToActivity7(view: View) {
+            val intent = Intent(this, Activity7::class.java)
+            startActivity(intent)
+        }
     }
 }
