@@ -20,4 +20,8 @@ class Activity7 : AppCompatActivity() {
         val intent = Intent(this, Activity8::class.java)
         startActivity(intent)
     }
+    fun goToWorkoutActivity(view: View) {
+        val intent = Intent(this, WorkoutActivity::class.java)
+        startActivity(intent)
+    }
 }

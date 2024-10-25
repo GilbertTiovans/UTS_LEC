@@ -20,7 +20,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <!-- ScrollView for Image Sections -->
     <ScrollView
@@ -38,6 +39,7 @@
 
             <!-- First Image with Text Overlay -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/img_cardio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
@@ -52,7 +54,7 @@
                     <!-- Right Arrow Icon -->
 
                     <ImageView
-                        android:id="@+id/img_cardio"
+                        android:id="@+id/img_cardio_image"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
@@ -88,7 +90,6 @@
 
             <!-- Second Image with Text Overlay -->
             <androidx.cardview.widget.CardView
-
                 android:id="@+id/img_other_exercise"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -99,9 +100,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp">
 
-                    <!-- Text Overlay -->
+                    <!-- ImageView with a unique ID -->
                     <ImageView
-                        android:id="@+id/img_other_exercise"
+                        android:id="@+id/img_other_exercise_image"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"

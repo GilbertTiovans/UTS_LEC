@@ -19,4 +19,8 @@ class Activity12 : AppCompatActivity() {
         val intent = Intent(this, Activity13::class.java)
         startActivity(intent)
     }
+    fun goToActivity9(view: View) {
+        val intent = Intent(this, Activity9::class.java)
+        startActivity(intent)
+    }
 }

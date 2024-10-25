@@ -6,7 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.uts.Activity10
+
 
 class Activity9 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +17,10 @@ class Activity9 : AppCompatActivity() {
     }
     fun goToActivity10(view: View) {
         val intent = Intent(this, Activity10::class.java)
+        startActivity(intent)
+    }
+    fun goToActivity12(view: View) {
+        val intent = Intent(this, Activity12::class.java)
         startActivity(intent)
     }
 }

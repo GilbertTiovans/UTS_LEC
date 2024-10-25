@@ -92,7 +92,7 @@
         android:backgroundTint="@color/grey_chris"
         android:padding="15dp"
         android:layout_margin="10dp"
-        android:onClick="goToActivity13" />
+        android:onClick="goToActivity9" />
 
 
 
